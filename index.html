@@ -114,7 +114,9 @@
 </div>
 
 
-    <form id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/mrbypvpg" method="POST">
+      
+      ">
       <div class="two-col">
         <div>
           <label for="fullName">Full Name *</label>
@@ -159,7 +161,7 @@
   <!-- SMTPJS and form-submit script -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
+    document.getElementById("<form id="contactForm"Form").addEventListener("submit", function(e) {
       e.preventDefault();
       
       // Gather form data
@@ -191,13 +193,13 @@
         // Optional: add your own email address here, comma-separated
         // To: "tushar.vora@tihiitb.org,rashmi.chinchanikar@tihiitb.org,YOUR@EMAIL.COM",
         From: "noreply@bharatgen.com",
-        Subject: "New BharatGen Contact: " + data.fullName,
+        Subject: "New BharatGen <form id="contactForm": " + data.fullName,
         Body: body
       }).then(
         message => {
           if (message === "OK") {
             alert("Thank you! Your information has been submitted.");
-            document.getElementById("contactForm").reset();
+            document.getElementById("<form id=Form").reset();
           } else {
             alert("Error sending message: " + message);
           }
@@ -207,5 +209,6 @@
   </script>
 </body>
 </html>
+
 
 
